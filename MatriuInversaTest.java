@@ -4,6 +4,18 @@ import static org.junit.Assert.*;
 
 
 public class MatriuInversaTest {
+
+    @Test
+    public void tesTransposicio() {
+//        double[][] mat1 = { {1,2},{3,4}};
+//        double[][] t1 = {{1,3},{2,4}};
+//        compareArraysDouble(t1, MatriuInversa.transpose(mat1), 0.01);
+
+        double[][] mat2 = {{1, 2, 3}, {4, 5, 6}, {7, 8, 9}};
+        double[][] t2 = {{1, 4, 7}, {2, 5, 8}, {3, 6, 9}};
+        compareArraysDouble(t2, MatriuInversa.transpose(mat2), 0.01);
+    }
+
     @Test
     public void testDeterminant() {
         double[][] mat0 = {{1, 2}, {3, 4}};
